@@ -1,0 +1,82 @@
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.form-select, .form-check-input {
+  cursor: pointer;
+}
+
+.Foto {
+  width: 200px;
+}
+
+/* DETAIL usuario*/
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  /* Espaço entre as tarefas */
+}
+
+.todo_title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 1rem;
+  background-color: #A9A9E3;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  /* Espaço entre o título e o badge */
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  /* Ajusta o tamanho do badge */
+  border-radius: 0.5rem;
+}
+
+.album_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* CSS DE ALBUNS */
+.album {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 colunas */
+  gap: 16px;
+  /* Espaço entre as imagens */
+}
+
+.album img {
+  width: 100%;
+  /* Ajusta a largura das imagens para preencher a coluna */
+  height: auto;
+  /* Mantém a proporção da imagem */
+}
+
+@media (max-width: 1024px) {
+  .album {
+      grid-template-columns: repeat(3, 1fr);
+      /* 3 colunas em tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .album {
+      grid-template-columns: repeat(2, 1fr);
+      /* 2 colunas em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .album {
+      grid-template-columns: 1fr;
+      /* 1 coluna em celulares */
+  }
+}

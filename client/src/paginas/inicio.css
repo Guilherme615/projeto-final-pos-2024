@@ -1,0 +1,37 @@
+.btn-custom {
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    font-weight: 600; 
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+    background-color: #3A3CB6; 
+}
+
+.btn-secondary {
+    background-color: #A41416;
+    border: 1px solid #6c757d;
+}
+
+.btn-primary {
+    background-color: #3A3CB6; 
+    border: 1px solid #007bff;
+}
+
+.btn-custom:hover {
+    background-color: #131E69; 
+    color: #fff; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-2px); 
+}
+
+.btn-custom-link {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    color: #3A3CB6;
+}
+
+.btn-custom-link:hover {
+    color: #131E69;
+}
